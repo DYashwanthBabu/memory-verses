@@ -10,118 +10,174 @@
             line-height: 1.6;
             margin: 20px;
             padding: 20px;
-            background-color: #f9f9f9;
+            background-color: #f0f8ff; /* Light blue background */
             color: #333;
         }
-        h1, h2 {
-            color: #2c3e50;
+        h1 {
+            color: #1a3c60; /* Darker blue for the main heading */
+            text-align: center;
         }
         h2 {
+            color: #2c3e50;
             margin-top: 30px;
         }
+        
+        /* Non-optional Section Styles */
         blockquote {
-            margin: 10px 0;
-            padding: 10px;
-            background-color: #eaf2f8;
-            border-left: 5px solid #3498db;
+            margin: 15px 0;
+            padding: 15px;
+            background-color: #ffffff; /* White background for blockquotes */
+            border-left: 5px solid #3498db; /* Blue border */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+            font-style: italic; /* Italicize the verses */
+            transition: all 0.3s ease; /* Smooth hover effect */
         }
+        
+        blockquote:hover {
+            border-left-color: #2980b9; /* Darker blue when hovered */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bigger shadow on hover */
+        }
+        
+        blockquote strong {
+            color: #1c658c; /* Darker blue for the reference */
+        }
+
+        .non-optional h2 {
+            color: #2980b9; /* Blue color for headings */
+        }
+
+        .non-optional blockquote {
+            border-left-color: #3498db; /* Consistent blue border for non-optional content */
+        }
+
+        /* Optional Section Styles (unchanged) */
+        .optional {
+            background-color: #f4f7fc; /* Light blue-grey background */
+            border-left: 5px solid #9b59b6; /* Purple border for optional */
+            padding: 10px;
+        }
+
+        .optional h2 {
+            color: #9b59b6; /* Purple color for Optional section headings */
+        }
+
+        .optional blockquote {
+            background-color: #fdfdfe; /* Light grey for optional blockquotes */
+            border-left: 5px solid #9b59b6; /* Same purple border */
+            color: #555; /* Muted text color */
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+                margin: 10px;
+            }
+
+            blockquote {
+                padding: 10px;
+                margin: 10px 0;
+            }
+        }
+
     </style>
 </head>
 <body>
 
     <h1>Words of Encouragement</h1>
 
-    <h2>Promise</h2>
-    <blockquote>
-        <strong>Jeremiah 29:11:</strong> For I know the plans I have for you,” declares the Lord, “plans to prosper you and not to harm you, plans to give you hope and a future.
-    </blockquote>
-    <blockquote>
-        <strong>Psalm 31:8:</strong> The LORD himself goes before you and will be with you; he will never leave you nor forsake you. Do not be afraid; do not be discouraged.
-    </blockquote>
-    <blockquote>
-        <strong>Psalm 34:8:</strong> Taste and see that the Lord is good; blessed is the one who takes refuge in him.
-    </blockquote>
-    <blockquote>
-        <strong>Nahum 1:7:</strong> The Lord is good, a refuge in times of trouble. He cares for those who trust in him.
-    </blockquote>
-    <blockquote>
-        <strong>Exodus 14:14:</strong> The LORD will fight for you; you need only to be still.
-    </blockquote>
-    <blockquote>
-        <strong>Psalm 32:8:</strong> I will instruct you and teach you in the way you should go; I will counsel you with my loving eye on you.
-    </blockquote>
+    <!-- Non-Optional Section -->
+    <div class="non-optional">
+        <h2>Promise</h2>
+        <blockquote>
+            <strong>Jeremiah 29:11:</strong> For I know the plans I have for you, declares the Lord, plans to prosper you and not to harm you, plans to give you hope and a future.
+        </blockquote>
+        <blockquote>
+            <strong>Psalm 31:8:</strong> The Lord himself goes before you and will be with you; he will never leave you nor forsake you. Do not be afraid; do not be discouraged.
+        </blockquote>
+        <blockquote>
+            <strong>Psalm 34:8:</strong> Taste and see that the Lord is good; blessed is the one who takes refuge in him.
+        </blockquote>
+        <blockquote>
+            <strong>Nahum 1:7:</strong> The Lord is good, a refuge in times of trouble. He cares for those who trust in him.
+        </blockquote>
+        <blockquote>
+            <strong>Exodus 14:14:</strong> The Lord will fight for you; you need only to be still.
+        </blockquote>
+        <blockquote>
+            <strong>Psalm 32:8:</strong> I will instruct you and teach you in the way you should go; I will counsel you with my loving eye on you.
+        </blockquote>
+        <blockquote>
+            <strong>Numbers 23:19:</strong> God is not human, that he should lie, not a human being, that he should change his mind. Does he speak and then not act? Does he promise and not fulfill?
+        </blockquote>
+        <blockquote>
+            <strong>1 Corinthians 10:13:</strong> No temptation has overtaken you except what is common to mankind. And God is faithful; he will not let you be tempted beyond what you can bear. But when you are tempted, he will also provide a way out so that you can endure it.
+        </blockquote>
 
-    <h2>Healing</h2>
-    <blockquote>
-        <strong>Psalm 103:2-3:</strong> Praise the Lord, my soul, and forget not all his benefits— who forgives all your sins and heals all your diseases.
-    </blockquote>
-    <blockquote>
-        <strong>Psalm 147:3:</strong> He heals the brokenhearted and binds up their wounds.
-    </blockquote>
-    <blockquote>
-        <strong>Jeremiah 17:14:</strong> Heal me, Lord, and I will be healed; save me and I will be saved, for you are the one I praise.
-    </blockquote>
-    <blockquote>
-        <strong>Psalm 41:3:</strong> The Lord sustains him on his sickbed; in his illness you restore him to full health.
-    </blockquote>
-    <blockquote>
-        <strong>Isaiah 53:5:</strong> But he was pierced for our transgressions, he was crushed for our iniquities; the punishment that brought us peace was on him, and by his wounds we are healed.
-    </blockquote>
-    <blockquote>
-        <strong>2 Chronicles 7:14:</strong> If my people who are called by my name will humble themselves, pray, seek my face, and turn from their wicked ways, then I will hear from heaven, will forgive their sin, and will heal their land.
-    </blockquote>
-    <blockquote>
-        <strong>Matthew 9:12:</strong> When Jesus heard it, he said to them, “Those who are healthy have no need for a physician, but those who are sick do.”
-    </blockquote>
-    <blockquote>
-        <strong>Matthew 8:17:</strong> that it might be fulfilled which was spoken by Isaiah the prophet, saying: 'He Himself took our infirmities And bore our sicknesses.'
-    </blockquote>
-    <blockquote>
-        <strong>Exodus 15:26:</strong> If you diligently heed the voice of the Lord your God and do what is right in His sight, give ear to His commandments and keep all His statutes, I will put none of the diseases on you which I have brought on the Egyptians. For I am the Lord who heals you.
-    </blockquote>
+        <h2>Healing</h2>
+        <blockquote>
+            <strong>Psalm 103:2-3:</strong> Praise the Lord, my soul, and forget not all his benefits who forgives all your sins and heals all your diseases.
+        </blockquote>
+        <blockquote>
+            <strong>Psalm 147:3:</strong> He heals the brokenhearted and binds up their wounds.
+        </blockquote>
+        <blockquote>
+            <strong>Jeremiah 17:14:</strong> Heal me, Lord, and I will be healed; save me and I will be saved, for you are the one I praise.
+        </blockquote>
+        <blockquote>
+            <strong>Psalm 41:3:</strong> The Lord sustains them on their sickbed and restores them from their bed of illness.
+        </blockquote>
+        <blockquote>
+            <strong>Isaiah 53:5:</strong> But he was pierced for our transgressions, he was crushed for our iniquities; the punishment that brought us peace was on him, and by his wounds we are healed.
+        </blockquote>
+        <blockquote>
+            <strong>2 Chronicles 7:14:</strong> If my people, who are called by my name, will humble themselves and pray and seek my face and turn from their wicked ways, then I will hear from heaven, and I will forgive their sin and will heal their land.
+        </blockquote>
+        <blockquote>
+            <strong>Matthew 9:12:</strong> On hearing this, Jesus said, It is not the healthy who need a doctor, but the sick.
+        </blockquote>
+        <blockquote>
+            <strong>Matthew 8:17:</strong> This was to fulfill what was spoken through the prophet Isaiah: “He took up our infirmities and bore our diseases.”
+        </blockquote>
+    </div>
 
-    <h2>Miracle</h2>
-    <blockquote>
-        <strong>Job 5:9:</strong> He does wonderful things that can't be understood. He does miracles that can't even be counted.
-    </blockquote>
-    <blockquote>
-        <strong>Mark 11:24:</strong> Therefore I tell you, whatever you ask for in prayer, believe that you have received it, and it will be yours.
-    </blockquote>
-    <blockquote>
-        <strong>Jeremiah 32:27:</strong> I am the LORD, the God of all mankind. Is anything too hard for me?
-    </blockquote>
-    <blockquote>
-        <strong>Luke 18:27:</strong> What is impossible with man is possible with God.
-    </blockquote>
+    <!-- Optional Section (same as before) -->
+    <br>
+    <h1>Optional</h1>
+    <div class="optional">
+        <h2>Promise</h2>
+        <blockquote>
+            <strong>Matthew 7:7:</strong> Ask and it will be given to you; seek and you will find; knock and the door will be opened to you.
+        </blockquote>
+        <blockquote>
+            <strong>Psalm 89:34:</strong> I will not violate my covenant or alter what my lips have uttered.
+        </blockquote>
 
-    <h2>Strength/Fear</h2>
-    <blockquote>
-        <strong>II Timothy 1:7:</strong> For God has not given us a spirit of fear, but of power and of love and of a sound mind.
-    </blockquote>
-    <blockquote>
-        <strong>Romans 8:37:</strong> Yet in all these things we are more than conquerors through Him who loved us.
-    </blockquote>
-    <blockquote>
-        <strong>Psalm 59:9:</strong> O my Strength, I will watch for you, for you, O God, are my fortress.
-    </blockquote>
-    <blockquote>
-        <strong>Philippians 4:13:</strong> I can do all things through Christ who strengthens me.
-    </blockquote>
-    <blockquote>
-        <strong>Proverbs 17:22:</strong> A cheerful heart is good medicine, but a crushed spirit dries up the bones.
-    </blockquote>
-    <blockquote>
-        <strong>2 Corinthians 12:9:</strong> My grace is sufficient for you, for my power is made perfect in weakness.
-    </blockquote>
-    <blockquote>
-        <strong>Isaiah 40:29:</strong> He gives strength to the weary and increases the power of the weak.
-    </blockquote>
-    <blockquote>
-        <strong>Isaiah 41:10:</strong> So do not fear, for I am with you; do not be dismayed, for I am your God. I will strengthen you and help you; I will uphold you with my righteous right hand.
-    </blockquote>
-    <blockquote>
-        <strong>Psalm 23:4:</strong> Even though I walk through the valley of the shadow of death, I will fear no evil, for you are with me; your rod and your staff, they comfort me.
-    </blockquote>
+        <h2>Healing</h2>
+        <blockquote>
+            <strong>Exodus 15:26:</strong> He said, “If you listen carefully to the Lord your God and do what is right in his eyes, if you pay attention to his commands and keep all his decrees, I will not bring on you any of the diseases I brought on the Egyptians, for I am the Lord, who heals you.”
+        </blockquote>
+        <blockquote>
+            <strong>Proverbs 14:30:</strong> A heart at peace gives life to the body, but envy rots the bones.
+        </blockquote>
+
+        <h2>Miracle</h2>
+        <blockquote>
+            <strong>1 Samuel 12:24:</strong> But be sure to fear the Lord and serve him faithfully with all your heart; consider what great things he has done for you.
+        </blockquote>
+        <blockquote>
+            <strong>Psalm 77:14:</strong> You are the God who performs miracles; you display your power among the peoples.
+        </blockquote>
+
+        <h2>Strength/Fear</h2>
+        <blockquote>
+            <strong>Psalm 23:4:</strong> Even though I walk through the valley of the shadow of death, I will fear no evil, for you are with me; your rod and your staff, they comfort me.
+        </blockquote>
+        <blockquote>
+            <strong>Deuteronomy 31:6:</strong> Be strong and courageous. Do not be afraid or terrified because of them, for the Lord your God goes with you; he will never leave you nor forsake you.
+        </blockquote>
+    </div>
 
 </body>
 </html>
